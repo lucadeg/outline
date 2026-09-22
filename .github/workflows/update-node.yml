@@ -1,11 +1,10 @@
+
 name: Update Node.js LTS
 
 on:
-  schedule:
-    # Run every Monday at 9:00 UTC
-    - cron: "0 9 * * 1"
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write
   pull-requests: write

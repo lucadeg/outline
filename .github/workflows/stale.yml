@@ -1,9 +1,8 @@
+
 name: "Close Stale PRs"
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 1 * * *"
-
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   issues: write
   pull-requests: write

@@ -1,15 +1,9 @@
+
 name: Docker Build Check
 
 on:
-  push:
-    paths:
-      - "Dockerfile"
-      - "Dockerfile.base"
-  pull_request:
-    paths:
-      - "Dockerfile"
-      - "Dockerfile.base"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 env:
   BASE_IMAGE_NAME: outline-base
 

@@ -1,9 +1,9 @@
+
 name: Auto Close Unsigned PRs
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # Run daily at midnight UTC
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   close-unsigned-prs:
     runs-on: ubuntu-latest
